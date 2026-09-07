@@ -1,0 +1,44 @@
+{
+    "clients": [
+        {
+            "id": "clt-test",
+            "full_name": "Client Test",
+            "phone": "0819000000",
+            "commune": "Gombe",
+            "latitude": "-4.3",
+            "longitude": "15.3"
+        }
+    ],
+    "agents": [
+        {
+            "id": "agt-test",
+            "name": "Agent Test",
+            "status": "en mission"
+        }
+    ],
+    "alerts": [
+        {
+            "id": "alt-test",
+            "client_id": "clt-test",
+            "type_alerte": "SOS",
+            "level_name": "Critique",
+            "message": "Test fermeture",
+            "status": "Agents assignes",
+            "created_at": "2026-06-18 10:00:00",
+            "updated_at": "2026-06-18 10:00:00"
+        }
+    ],
+    "treated_alerts": [],
+    "interventions": [
+        {
+            "id": "int-test",
+            "alert_id": "alt-test",
+            "client_id": "clt-test",
+            "agent_id": "agt-test",
+            "status": "En route",
+            "report": "",
+            "created_at": "2026-06-18 10:00:00",
+            "updated_at": "2026-06-18 10:00:00"
+        }
+    ]
+}

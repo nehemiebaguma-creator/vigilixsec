@@ -1,0 +1,20 @@
+{
+    "running": true,
+    "pid": 18192,
+    "started_at": "2026-09-03T17:47:39+01:00",
+    "last_tick_at": "2026-09-04T13:54:39+01:00",
+    "last_activity_at": "2026-09-04T13:54:28+01:00",
+    "last_results_count": 0,
+    "last_ok_count": 0,
+    "last_error_count": 0,
+    "eligible_camera_count": 1,
+    "due_camera_count": 0,
+    "primary_camera_id": "",
+    "idle_reason": "Worker actif. Camera eligible, derniere tentative en echec; nouvelle tentative apres cooldown.",
+    "last_camera_id": "cam_6a307ae517dd52.10007940",
+    "last_camera_error": "Connection timed out after 2004 milliseconds",
+    "last_camera_error_at": "2026-09-04T13:54:28+01:00",
+    "interval_seconds": 1,
+    "cooldown_seconds": 1,
+    "failure_cooldown_seconds": 15
+}

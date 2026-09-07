@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion | VIGILANCE Security</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/vigilance/assets/css/app.css?v=1782527470">
+    <link rel="stylesheet" href="/vigilance/assets/css/ops-next.css">
+    <style>
+        :root {
+            color-scheme: dark;
+        }
+
+        body.auth-shell {
+            margin: 0;
+            font-family: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+            color: #eef5ff;
+            background:
+                radial-gradient(circle at 12% 14%, rgba(114, 216, 255, 0.16), transparent 0, transparent 24%),
+                radial-gradient(circle at 88% 12%, rgba(23, 151, 255, 0.12), transparent 0, transparent 20%),
+                radial-gradient(circle at 50% 82%, rgba(246, 201, 109, 0.08), transparent 0, transparent 20%),
+                linear-gradient(180deg, #07111b 0%, #050b13 48%, #03080f 100%);
+        }
+
+        body.auth-shell::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background:
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(180deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 96px 96px;
+            mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.62), transparent 90%);
+            pointer-events: none;
+            opacity: 0.26;
+        }
+
+        .auth-card.auth-card--portal-media {
+            width: min(1260px, calc(100% - 32px));
+            margin: 24px auto;
+            border-radius: 38px;
+            border: 1px solid rgba(124, 183, 238, 0.14);
+            background: rgba(7, 17, 29, 0.84);
+            box-shadow: 0 34px 120px rgba(0, 0, 0, 0.34);
+            backdrop-filter: blur(20px);
+        }
+
+        .auth-layout {
+            display: grid;
+            gap: 26px;
+            padding: 34px;
+        }
+
+        .auth-brand {
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+        }
+
+        .auth-logo {
+            width: 88px;
+            height: 88px;
+            border-radius: 24px;
+            padding: 8px;
+            background:
+                radial-gradient(circle at 50% 18%, rgba(114, 216, 255, 0.18), transparent 0, transparent 46%),
+                linear-gradient(180deg, rgba(8, 20, 34, 0.98), rgba(7, 17, 29, 0.98));
+            border: 1px solid rgba(145, 213, 255, 0.24);
+            box-shadow:
+                inset 0 0 0 1px rgba(255, 255, 255, 0.04),
+                0 18px 42px rgba(0, 0, 0, 0.24);
+        }
+
+        .auth-brand h1,
+        .auth-panel h2,
+        .auth-highlight h2 {
+            margin: 8px 0 12px;
+            font-family: "Outfit", "Segoe UI", sans-serif;
+            letter-spacing: -0.03em;
+            line-height: 1.02;
+            color: #f3f8ff;
+        }
+
+        .auth-brand h1 {
+            font-size: clamp(2.2rem, 4vw, 3.35rem);
+        }
+
+        .auth-brand p:not(.eyebrow),
+        .auth-panel__intro,
+        .auth-panel__hint,
+        .auth-highlight__intro,
+        .portal-video-note,
+        .auth-role-card p,
+        .auth-steps li {
+            color: #c8d7ea;
+            line-height: 1.72;
+        }
+
+        .eyebrow,
+        .auth-panel__eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 16px;
+            border-radius: 999px;
+            border: 1px solid rgba(114, 216, 255, 0.18);
+            background: rgba(114, 216, 255, 0.08);
+            color: #72d8ff;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .auth-kpis {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .auth-kpi {
+            padding: 18px 18px 16px;
+            border-radius: 22px;
+            border: 1px solid rgba(118, 181, 240, 0.16);
+            background: rgba(10, 22, 37, 0.74);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+        }
+
+        .auth-kpi span {
+            display: block;
+            margin-bottom: 8px;
+            color: #72d8ff;
+            font-size: 0.76rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .auth-kpi strong {
+            display: block;
+            font-size: 0.96rem;
+            line-height: 1.55;
+            color: #eef5ff;
+        }
+
+        .auth-grid {
+            display: grid;
+            gap: 22px;
+        }
+
+        .auth-grid.auth-grid--portal-media {
+            grid-template-columns: minmax(0, 1fr) minmax(410px, 540px);
+            gap: 26px;
+            align-items: start;
+        }
+
+        .auth-grid.auth-grid--portal-media > .auth-panel,
+        .auth-grid.auth-grid--portal-media > .auth-highlight,
+        .auth-grid > .auth-panel {
+            min-width: 0;
+            border-radius: 30px;
+            border: 1px solid rgba(118, 181, 240, 0.16);
+            background: linear-gradient(180deg, rgba(9, 19, 32, 0.94), rgba(7, 15, 26, 0.96));
+            box-shadow: 0 28px 72px rgba(0, 0, 0, 0.24);
+        }
+
+        .auth-panel,
+        .auth-highlight.auth-highlight--portal-media {
+            position: relative;
+            overflow: hidden;
+            padding: 28px;
+        }
+
+        .auth-panel::before,
+        .auth-highlight.auth-highlight--portal-media::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(114, 216, 255, 0.08), transparent 42%, transparent 60%, rgba(246, 201, 109, 0.06));
+            pointer-events: none;
+        }
+
+        .auth-panel > *,
+        .auth-highlight.auth-highlight--portal-media > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .auth-panel__header {
+            margin-bottom: 20px;
+        }
+
+        .auth-panel__intro {
+            margin: 0;
+            max-width: 60ch;
+        }
+
+        .auth-panel form {
+            display: grid;
+            gap: 16px;
+        }
+
+        .auth-panel label {
+            display: grid;
+            gap: 10px;
+        }
+
+        .auth-panel label > span {
+            color: #d9e5f3;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .auth-panel input {
+            width: 100%;
+            border: 1px solid rgba(121, 180, 236, 0.16);
+            border-radius: 16px;
+            padding: 16px 18px;
+            font: inherit;
+            color: #eef5ff;
+            background: rgba(8, 16, 27, 0.84);
+            outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        .auth-panel input:focus {
+            border-color: rgba(114, 216, 255, 0.34);
+            box-shadow: 0 0 0 4px rgba(114, 216, 255, 0.12);
+            background: rgba(9, 19, 31, 0.96);
+        }
+
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 4px;
+        }
+
+        .btn {
+            min-height: 52px;
+            padding: 0 22px;
+            border-radius: 999px;
+            font-weight: 800;
+            letter-spacing: 0.015em;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn.btn-primary {
+            color: #04111f;
+            border: 0;
+            background: linear-gradient(135deg, #1797ff, #72d8ff, #f6c96d);
+            box-shadow: 0 18px 38px rgba(23, 151, 255, 0.22);
+        }
+
+        .btn.btn-secondary {
+            color: #eef5ff;
+            border: 1px solid rgba(121, 180, 236, 0.18);
+            background: rgba(11, 22, 36, 0.72);
+        }
+
+        .auth-panel__hint {
+            margin: 18px 0 0;
+            font-size: 0.9rem;
+        }
+
+        .portal-video-shell {
+            width: 100%;
+            max-width: none;
+            margin: 0 0 20px;
+        }
+
+        .portal-video-frame {
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px;
+            border: 1px solid rgba(83, 152, 222, 0.18);
+            background: rgba(7, 15, 28, 0.96);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.34);
+        }
+
+        .portal-video-frame::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(180deg, rgba(5, 10, 18, 0.04) 0%, rgba(5, 10, 18, 0.18) 35%, rgba(4, 9, 15, 0.72) 100%),
+                linear-gradient(125deg, rgba(114, 216, 255, 0.1), transparent 35%, transparent 64%, rgba(246, 201, 109, 0.08));
+            pointer-events: none;
+        }
+
+        .portal-video-frame video {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            background: #050b14;
+        }
+
+        .portal-video-frame img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            background: #050b14;
+        }
+
+        .portal-video-note {
+            margin-top: 12px;
+            font-size: 0.9rem;
+        }
+
+        .portal-video-action {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            z-index: 2;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 11px 15px;
+            border-radius: 999px;
+            background: rgba(5, 14, 26, 0.82);
+            border: 1px solid rgba(131, 193, 243, 0.24);
+            color: #f3f8ff;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .portal-video-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            z-index: 2;
+            padding: 9px 13px;
+            border-radius: 999px;
+            background: rgba(5, 14, 26, 0.76);
+            border: 1px solid rgba(131, 193, 243, 0.2);
+            color: #dff2ff;
+            font-size: 0.72rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .auth-highlight h2 {
+            font-size: 1.76rem;
+        }
+
+        .auth-highlight__intro {
+            margin: 0 0 18px;
+        }
+
+        .auth-role-list {
+            display: grid;
+            gap: 12px;
+        }
+
+        .auth-role-card {
+            padding: 18px 18px 16px;
+            border-radius: 22px;
+            border: 1px solid rgba(118, 181, 240, 0.14);
+            background: rgba(10, 22, 37, 0.72);
+        }
+
+        .auth-role-card strong {
+            display: block;
+            margin-bottom: 8px;
+            font-family: "Outfit", "Segoe UI", sans-serif;
+            font-size: 1.02rem;
+            letter-spacing: -0.02em;
+            color: #f3f8ff;
+        }
+
+        .auth-role-card p {
+            margin: 0;
+        }
+
+        .auth-steps {
+            margin: 0;
+            padding-left: 18px;
+            display: grid;
+            gap: 10px;
+        }
+
+        @media (max-width: 980px) {
+            .auth-card.auth-card--portal-media {
+                width: min(860px, calc(100% - 24px));
+            }
+
+            .auth-layout {
+                padding: 22px;
+            }
+
+            .auth-kpis,
+            .auth-grid.auth-grid--portal-media {
+                grid-template-columns: 1fr;
+            }
+
+            .auth-grid.auth-grid--portal-media {
+                gap: 18px;
+            }
+        }
+    </style>
+</head>
+<body class="auth-shell">
+    <main class="auth-card auth-card--portal-media">
+        <div class="auth-layout">
+            <div class="auth-brand">
+                <img src="/vigilance/brand-media.php?v=20260705-vigilance-premium" alt="VIGILANCE Security" class="auth-logo">
+                <div>
+                    <p class="eyebrow">Connexion securisee</p>
+                    <h1>Entrer dans l espace securise VIGILANCE</h1>
+                    <p>Chaque identite ouvre seulement les modules autorises: portail client, poste terrain, supervision OPS ou administration centrale.</p>
+                </div>
+            </div>
+
+            <section class="auth-kpis">
+                <article class="auth-kpi"><span>Acces</span><strong>Admin, superviseur, operateur, utilisateur, agent et client sur des espaces distincts.</strong></article>
+                <article class="auth-kpi"><span>Portail client</span><strong>Lien direct prioritaire pour une ouverture simple, reservee et propre.</strong></article>
+                <article class="auth-kpi"><span>Securite</span><strong>Role, session et historique cloisonnes pour garder la bonne lisibilite.</strong></article>
+            </section>
+
+            <div class="auth-grid auth-grid--portal-media">
+                <section class="auth-panel">
+                    
+                    <div class="auth-panel__header">
+                        <span class="auth-panel__eyebrow">Espace connexion reserve</span>
+                        <h2>Ouvrir votre acces securise</h2>
+                        <p class="auth-panel__intro">Clients, agents et equipes internes entrent chacun dans un espace distinct, avec les droits exacts associes au role.</p>
+                    </div>
+
+                    <form method="post" class="stack">
+                        <input type="hidden" name="csrf_token" value="1e0d6ddacbba9508c1cedccf77d53ef462944408a8ee015950c79bc174f82960" />                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email" autocomplete="username" placeholder="nom@entreprise.cd" required>
+                        </label>
+                        <label>
+                            <span>Mot de passe</span>
+                            <input type="password" name="password" autocomplete="current-password" placeholder="Votre mot de passe" required>
+                        </label>
+                        <div class="button-row">
+                            <button type="submit" class="btn btn-primary">Connexion</button>
+                            <a class="btn btn-secondary" href="/vigilance/">Retour a l accueil</a>
+                        </div>
+                    </form>
+                    <p class="auth-panel__hint">Le portail client peut aussi etre ouvert depuis le lien direct transmis par l administration VIGILANCE.</p>
+                </section>
+
+                <section class="auth-highlight auth-highlight--portal-media">
+                    <div class="portal-video-shell">
+                        <div class="portal-video-frame">
+                            <div class="portal-video-badge">OPS VIGILANCE</div>
+                                                            <img src="/vigilance/assets/images/vigilance-ops-center.png?v=20260705-premium" alt="Visuel portail VIGILANCE">
+                                                        <a class="portal-video-action" href="/vigilance/assets/images/vigilance-ops-center.png?v=20260705-premium" target="_blank" rel="noopener">Ouvrir le visuel</a>
+                        </div>
+                        <div class="portal-video-note">Centre OPS, verification camera et coordination terrain dans une meme chaine reservee.</div>
+                    </div>
+
+                    <h2>Quel acces utiliser ?</h2>
+                    <p class="auth-highlight__intro">Chaque role reste dans son espace. Le client consulte, l agent execute, la supervision coordonne et l administration pilote.</p>
+                    <div class="auth-role-list">
+                        <div class="auth-role-card">
+                            <strong>Client</strong>
+                            <p>Le meilleur parcours reste le lien direct genere depuis l administration. Il permet de definir le mot de passe puis d entrer dans le portail client sans configuration complexe.</p>
+                        </div>
+                        <div class="auth-role-card">
+                            <strong>Agent</strong>
+                            <p>L agent accede a son tableau de bord terrain, ses missions, ses clients affectes et les consignes synchronisees avec le centre OPS.</p>
+                        </div>
+                        <div class="auth-role-card">
+                            <strong>Admin</strong>
+                            <p>L administration gere les clients, les cameras, la carte, les comptes et les modules OPS depuis le dashboard central.</p>
+                        </div>
+                        <div class="auth-role-card">
+                            <strong>Superviseur, operateur, utilisateur</strong>
+                            <p>Les postes internes ouvrent uniquement les modules autorises par l administrateur: centre de controle, alertes, cameras, rapports, coordination terrain ou route.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="auth-grid">
+                <article class="auth-panel">
+                    <h2>Parcours client recommande</h2>
+                    <ul class="auth-steps">
+                        <li>1. Creer le dossier client dans l administration.</li>
+                        <li>2. Generer le lien portail direct avec token.</li>
+                        <li>3. Envoyer ce lien par WhatsApp ou email.</li>
+                        <li>4. Le client definit son mot de passe et ouvre son espace.</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

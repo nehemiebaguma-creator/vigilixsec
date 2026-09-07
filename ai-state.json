@@ -1,0 +1,143 @@
+{
+    "messages": [
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA Vigilix\nClient: Nehemie BAGUMA\nAlerte: Alerte \/ Normale\nHeure: 2026-05-28 23:21:16\nAdresse: KINSHASA - CPA MUSHIE - SALONGO - C\/Mt ngafula mbudi\nGPS: -4.339200 \/ 15.321000\nContact client: +243819174732\nCaméras liées: 2\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.339200%2C15.321000\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-05-28T23:21:16+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA Vigilix\nClient: cycyf\nAlerte: SOS \/ Critique\nHeure: 2026-06-07T02:01:48+01:00\nSituation: venez agresion\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.35003 \/ 15.21235\nContact client: 0819174732\nCaméras liées: 1\nRoute: Centre OPS -> cycyf\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-06-16T02:04:31+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA Vigilix\nClient: cycyf\nAlerte: SOS \/ Critique\nHeure: 2026-06-09T18:39:18+01:00\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.35003 \/ 15.21235\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.35003%2C15.21235\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-06-16T19:10:55+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA Vigilix\nClient: cycyf\nAlerte: SOS \/ Critique\nHeure: 2026-06-09T18:39:18+01:00\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.35003 \/ 15.21235\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.35003%2C15.21235\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-06-16T20:13:26+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA Vigilix\nClient: cycyf\nAlerte: SOS \/ Critique\nHeure: 2026-06-09T18:39:18+01:00\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.35003 \/ 15.21235\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.35003%2C15.21235\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-06-17T23:09:31+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA Vigilix\nClient: cycyf\nAlerte: SOS \/ Critique\nHeure: 2026-06-09T18:39:18+01:00\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.35003 \/ 15.21235\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.35003%2C15.21235\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-06-18T00:19:44+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: cycyf\nAlerte: Panique \/ Critique\nHeure: 2026-06-19 23:33:11\nSituation: Alerte panique declenchee depuis le portail client.\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.35003 \/ 15.21235\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.35003%2C15.21235\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-06-27T15:53:47+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: cycyf\nAlerte: Panique \/ Critique\nHeure: 2026-07-11 22:20:15\nSituation: Alerte panique declenchee depuis le portail client.\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.35003 \/ 15.21235\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.35003%2C15.21235\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-12T23:33:16+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: cycyf\nAlerte: Panique \/ Critique\nHeure: 2026-07-11 22:20:15\nSituation: Alerte panique declenchee depuis le portail client.\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.35003 \/ 15.21235\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.35003%2C15.21235\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-12T23:34:26+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: Abonne VIGILANCE\nAlerte: Assistance agent \/ Critique\nHeure: 2026-07-12 01:47:51\nSituation: L agent christiant demande un renfort immediat sur la mission active.\nCaméras liées: 0\nRoute: Route centre -> site a confirmer\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-12T23:42:51+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: Abonne VIGILANCE\nAlerte: Assistance agent \/ Critique\nHeure: 2026-07-12 01:47:45\nSituation: L agent christiant demande un renfort immediat sur la mission active.\nCaméras liées: 0\nRoute: Route centre -> site a confirmer\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-13T00:09:27+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: cycyf\nAlerte: Objet dangereux \/ Urgent\nHeure: 2026-07-15 19:00:42\nSituation: Objet dangereux detecte sur hikvision 01 • cours : couteau. Verification immediate requise.\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.32084 \/ 15.32629\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.32084%2C15.32629\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-15T19:02:07+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: cycyf\nAlerte: Objet dangereux \/ Urgent\nHeure: 2026-07-15 19:17:53\nSituation: Objet dangereux detecte sur hikvision 01 • cours : couteau. Verification immediate requise.\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.32084 \/ 15.32629\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.32084%2C15.32629\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-16T00:27:44+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: cycyf\nAlerte: Objet dangereux \/ Urgent\nHeure: 2026-07-15 19:17:53\nSituation: Objet dangereux detecte sur hikvision 01 • cours : couteau. Verification immediate requise.\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.32084 \/ 15.32629\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.32084%2C15.32629\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-16T01:09:21+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: cycyf\nAlerte: Objet dangereux \/ Urgent\nHeure: 2026-07-15 19:17:53\nSituation: Objet dangereux detecte sur hikvision 01 • cours : couteau. Verification immediate requise.\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.32084 \/ 15.32629\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.32084%2C15.32629\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-17T00:17:40+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: cycyf\nAlerte: Objet dangereux \/ Urgent\nHeure: 2026-07-15 19:17:53\nSituation: Objet dangereux detecte sur hikvision 01 • cours : couteau. Verification immediate requise.\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.32084 \/ 15.32629\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.32084%2C15.32629\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-18T20:11:42+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: cycyf\nAlerte: Panique \/ Critique\nHeure: 2026-07-18 20:46:26\nSituation: Test persistance codex-panic-f5ad3495\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.35003 \/ 15.21235\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.35003%2C15.21235\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-18T23:14:01+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: cycyf\nAlerte: Objet dangereux \/ Urgent\nHeure: 2026-07-15 19:17:53\nSituation: Objet dangereux detecte sur hikvision 01 • cours : couteau. Verification immediate requise.\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.32084 \/ 15.32629\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.32084%2C15.32629\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-18T23:51:07+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: cycyf\nAlerte: Menace armee \/ Critique\nHeure: 2026-07-19 16:17:09\nSituation: Menace critique detectee sur hikvision 01 • cours : arme a feu. Verification immediate requise.\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.32084 \/ 15.32629\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.32084%2C15.32629\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-19T16:17:29+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: cycyf\nAlerte: Menace armee \/ Critique\nHeure: 2026-07-19 16:41:15\nSituation: Menace critique detectee sur hikvision 01 • cours : arme a feu. Verification immediate requise.\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.32084 \/ 15.32629\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.32084%2C15.32629\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-19T17:40:30+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: cycyf\nAlerte: Menace armee \/ Critique\nHeure: 2026-07-19 16:41:15\nSituation: Menace critique detectee sur hikvision 01 • cours : arme a feu. Verification immediate requise.\nAdresse: KINSHASA - ngaliema - C\/Mt ngafula mbudi\nGPS: -4.32084 \/ 15.32629\nContact client: 0819174732\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.32084%2C15.32629\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-19T17:42:03+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: Nehemie BAGUMA\nAlerte: Panique \/ Critique\nHeure: 2026-07-20 02:06:44\nSituation: TEST AUDIT - a supprimer\nAdresse: KINSHASA - CPA MUSHIE - SALONGO - C\/Mt ngafula mbudi\nGPS: -4.339200 \/ 15.321000\nContact client: +243819174732\nCaméras liées: 0\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.339200%2C15.321000\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-20T02:13:45+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: nehemi baguma\nAlerte: Panique \/ Critique\nHeure: 2026-07-20 08:04:05\nSituation: Alerte panique declenchee depuis le portail client.\nAdresse: KINSHASA - kintambo - C\/Mt ngafula mbudi\nGPS: -4.325670 \/ 15.326260\nContact client: 0988698986\nCaméras liées: 0\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.325670%2C15.326260\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-07-20T08:05:26+01:00"
+        },
+        {
+            "role": "assistant",
+            "message": "Briefing automatique IA VIGILANCE\nClient: Abonne VIGILANCE\nAlerte: Menace armee \/ Critique\nHeure: 2026-08-21 15:01:00\nSituation: Menace critique detectee sur hikvision 01 • cours : couteau. Verification immediate requise.\nGPS: -4.32084 \/ 15.32629\nCaméras liées: 1\nRoute: https:\/\/www.google.com\/maps\/dir\/-4.3250,15.3222\/-4.32084%2C15.32629\nConsigne IA: confirmer le départ, ouvrir la route, sécuriser le site, remonter tout changement au centre OPS.",
+            "created_at": "2026-08-22T15:27:25+01:00"
+        }
+    ],
+    "supervision_runs": [],
+    "detections": {
+        "motion": {
+            "status": "ready",
+            "last_check": "2026-05-18T03:52:14+01:00"
+        },
+        "face": {
+            "status": "standby",
+            "last_check": "2026-05-18T03:52:14+01:00"
+        },
+        "plate": {
+            "status": "standby",
+            "last_check": "2026-05-18T03:52:14+01:00"
+        },
+        "dispatch": {
+            "status": "ready",
+            "last_check": "2026-05-18T03:52:14+01:00"
+        }
+    }
+}
