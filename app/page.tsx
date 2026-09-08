@@ -5,13 +5,6 @@ import { ShieldCheck, Camera, Bell, Users, ArrowUpRight, Activity, LockKeyhole, 
 import { createClient } from '@/lib/supabase/client'
 import styles from './page.module.css'
 
-const signals = [
-  { label: 'Zones protégées', value: '24', detail: '+3 ce mois', icon: ShieldCheck },
-  { label: 'Caméras actives', value: '18/20', detail: '98.4% uptime', icon: Camera },
-  { label: 'Alertes traitées', value: '142', detail: '-12% cette semaine', icon: Bell },
-  { label: 'Utilisateurs autorisés', value: '36', detail: '4 administrateurs', icon: Users },
-]
-
 export default function Home() {
   const supabase = createClient()
   const [email, setEmail] = useState('')
@@ -19,9 +12,26 @@ export default function Home() {
   const [userEmail, setUserEmail] = useState<string | null>(null)
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
+  const [deviceCount, setDeviceCount] = useState('18/20')
+  const [alertCount, setAlertCount] = useState('3')
+  const signals = [
+    { label: 'Zones protégées', value: '24', detail: '+3 ce mois', icon: ShieldCheck },
+    { label: 'Caméras actives', value: deviceCount, detail: 'Données Supabase', icon: Camera },
+    { label: 'Alertes ouvertes', value: alertCount, detail: 'Données Supabase', icon: Bell },
+    { label: 'Utilisateurs autorisés', value: '36', detail: '4 administrateurs', icon: Users },
+  ]
 
   useEffect(() => {
-    supabase.auth.getUser().then(({ data }) => setUserEmail(data.user?.email ?? null))
+    supabase.auth.getUser().then(async ({ data }) => {
+      setUserEmail(data.user?.email ?? null)
+      if (!data.user) return
+      const [{ count: devices }, { count: alerts }] = await Promise.all([
+        supabase.from('devices').select('id', { count: 'exact', head: true }).eq('user_id', data.user.id).eq('status', 'active'),
+        supabase.from('security_alerts').select('id', { count: 'exact', head: true }).eq('user_id', data.user.id).eq('status', 'open'),
+      ])
+      if (devices !== null) setDeviceCount(`${devices}/20`)
+      if (alerts !== null) setAlertCount(String(alerts))
+    })
     const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => setUserEmail(session?.user?.email ?? null))
     return () => listener.subscription.unsubscribe()
   }, [supabase])
